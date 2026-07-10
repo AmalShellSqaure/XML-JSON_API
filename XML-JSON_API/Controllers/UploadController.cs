@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using XML_JSON_API.Models;
 using XML_JSON_API.Repositories;
 using XML_JSON_API.Services;
 
 namespace XML_JSON_API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api")]
     public class UploadController : ControllerBase

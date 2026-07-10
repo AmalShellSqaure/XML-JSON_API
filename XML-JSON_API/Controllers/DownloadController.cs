@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using System.Text;
 using XML_JSON_API.Repositories;
 
 namespace XML_JSON_API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api")]
     public class DownloadController : ControllerBase
